@@ -62,23 +62,22 @@ body::-webkit-scrollbar {
 }
 
 .text-section h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 54px;
+    margin-bottom: 0px;
     color: #C0E579; /* Cor verde claro */
-    font-family: "Montserrat", sans-serif; /* Fonte Montserrat */
-    font-weight: 700;
+    font-family: 'SF UI Text', sans-serif; 
+    font-weight: 900;
     align-items: flex-start; /* Alinha os itens à direita da tela */
     margin-left: 8%; /* Adiciona margem à esquerda */
 }
 
 .text-section h2 {
     font-size: 18px;
-    margin-bottom: 20px;
     font-weight: normal; /* Remove negrito */
     margin-left: 8%; /* Adiciona margem à esquerda */
     line-height: 1.6; /* Espaçamento entre linhas */
-    font-family: "Montserrat", sans-serif; /* Fonte Montserrat */
-    font-weight: 500; /*vinicius.scherer - Msm prop usada linha 77*/
+    font-family: 'SF UI Text', sans-serif;
+    font-weight: normal; /*vinicius.scherer - Msm prop usada linha 77*/
 }
 
 .text-section p {
@@ -126,20 +125,18 @@ z-index: 3; /* Coloca a imagem acima da seção de texto */
     padding: 20px; /* Espaçamento interno */
     z-index: 1; /* Coloca a seção de colunas acima da imagem */
     position: relative; /* Necessário para o posicionamento absoluto da imagem */
+    display: flex;
 }
 
 .column {
     color: #C0E579; /* Cor do texto */
-    padding: 26px; /* Espaçamento interno */
-    line-height: 1.6; /* Espaçamento entre linhas */
-
+    flex: 0.5;
 }
 
 .column-one {
     color: #C0E579; /* Cor do texto */
-    padding: 26px; /* Espaçamento interno */
-    line-height: 1.6; /* Espaçamento entre linhas */
-    margin-left: -40px; /* Margem à esquerda */
+    flex: 0.5
+ 
 }
 
 @media (max-width: 768px) {
@@ -152,7 +149,7 @@ z-index: 3; /* Coloca a imagem acima da seção de texto */
     }
 }
 
-.compare-section {
+.footer {
     height: 100px; /* Define a altura do rodapé */
     background-color: #F9F9F9; /* Cor branca */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */

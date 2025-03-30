@@ -10,18 +10,19 @@
     text-align: left;
 }
 
+.effect-img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    display: block;
+}
+
 .split-box.left {
     margin-top: 5%; /* Afasta o bloco do topo */
     margin-left: 100px;
 }
 
 .split-box.right {
-    margin-left: 15%;
-    margin-right: 100px;
-    margin-top: 20%;
-}
-
-.split-box.right img {
     margin-left: 15%;
     margin-right: 100px;
     margin-top: 20%;
@@ -41,6 +42,10 @@
     font-weight: 500;
     color: #3d155fb1;
     margin-top: -30px;
+}
 
-
+.engineering-image {
+    max-width: 80%; /* Limita o tamanho máximo */
+    margin-bottom: 0; /* Remove espaçamento extra */
+    margin-top: -100%; /* Margem negativa para subir a imagem */
 }
