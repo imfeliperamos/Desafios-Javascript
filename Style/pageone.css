@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
     flex-direction: column; /* Organiza os textos verticalmente */
     justify-content: center; /* Centraliza os textos verticalmente */
     padding: 40px;
-    background-image: url('/image/dottles2.png'); /* Empilha pontos1 e pontos2 */
+    background-image: url('./image/dottles2.png'); /* Empilha pontos1 e pontos2 */
     background-repeat: no-repeat, no-repeat; /* Evita repetição */
     background-position: 95% 10%; /* Define posição para cada imagem */
     background-size: 23%; /* Define tamanhos diferentes para cada imagem */
@@ -97,7 +97,7 @@ margin-top: 0;
     display: flex; /* Torna flexível */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    background-image: url('/image/dottles.png'); /* Empilha pontos1 e pontos2 */
+    background-image: url('./image/dottles.png'); /* Empilha pontos1 e pontos2 */
     background-repeat: no-repeat, no-repeat; /* Evita repetição */
     background-position: 20.5% 70%; /* Define posição para cada imagem */
     background-size: 50%; /* Define tamanhos diferentes para cada imagem */
