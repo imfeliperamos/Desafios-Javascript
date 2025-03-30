@@ -1,0 +1,70 @@
+<!DOCTYPE html>                           <!-- Isso define a versão do html | DOCTYPE começa com letra MAIUSCULA -->
+<html lang ="pt-br">                      <!-- Isso define o idioma que o site terá NUNCA FECHAR COM </HTML> -->
+<head>                                    <!-- essa tag simboliza onde terá o título da página junto com o formato utf-8 e a escala para celulares. -->
+    <link rel="icon" href="image/icone.ico"> <!-- Isso significa o Icon do site-->
+    <meta charset="utf-8">                <!-- o charset significa o código dos caracteres UTF-8 O formato de codificação do caracter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">   <!-- Isso significa para ajustar o tamanho em smartphones -->
+    <meta name="description" content="My first developer site">
+    
+
+    <title>My first developer</title>
+
+    <link rel="stylesheet" href="style/style.css">            <!-- Isso significa o link do CSS-->
+
+    
+</head>                                   <!-- Isso significa o fechamento da tag da seção head. -->
+<body>                                    <!-- é onde contem o conteúdo visivel do site -->
+
+    <header>                              <!-- Definir o cabeçalho-->
+   <img src="image/logo.png" alt="Logo" class="logo"> <!-- Isso significa o logo do site-->
+        
+   <!--INICIO DO MENU-->
+    <nav>
+        
+        <ul>
+            <li><a href="/Index.html">Home</a></li>
+            <li><a href="/Aboutme.html">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#linkedin" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <section>                             <!-- organizar de forma estruturada-->
+        <h2>About me</h2>                 <!-- A Tag h2 serve para subtitulo-->
+        <p>My name is Felipe Ramos and i'm learning to develop</p>
+    </section>
+
+    <section><h2>My Photo</h2>            <!-- Inserindo uma foto minha-->
+        <img src="image/foto.jpeg" alt="My Photo" class="profile-photo" width="200">  <!-- Esse código serve para inserir uma imagem-->
+    </section>
+
+    <section>
+        <h2>Minhas redes sociais</2>
+        <p>Me siga no <a href="https://www.instagram.com/imfeliperamos/" target="_blank" rel="noopener noreferrer">Instagram</a>!</p>  <!-- Esse código serve para inserir um link atráves do texto Target serve para abrir em uma guia nova | NOREFERRER deixa mais seguro-->
+    </section>
+
+
+    <section>
+        <h2>Contact me</h2>                                             <!-- Aqui é o formulário de contato-->
+        <form>                                                          <!-- Aqui é o formulário de contato-->
+            <label for="Name">Nome:</label>                             <!-- Aqui é o campo de nome-->
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>   
+
+            <label for="email"> Your E-mail</label>                     <!-- Aqui é o campo de e-mail-->
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail"  required>
+
+            <label for="email"> Your E-mail</label>  
+            <textarea id="message" name="message" placeholder="Digite sua mensagem aqui..." maxlength="150" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>                       <!-- Aqui é o botão de enviar--> 
+
+        </form>
+    </section>
+
+    <footer>                              <!-- Rodapé do site-->
+        <p>Desenvolvido por Felipe</p>
+    </footer>
+
+</body> 
+</html>
