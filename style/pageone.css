@@ -17,7 +17,6 @@ body::-webkit-scrollbar {
     height: 100vh; /* Altura total da tela */
     position: relative; /* Necessário para o posicionamento absoluto da imagem */
     overflow: hidden;
-    height: 100vh; /* Define a altura fixa */
 }
 
 .background-layer {
@@ -54,12 +53,12 @@ body::-webkit-scrollbar {
     flex-direction: column; /* Organiza os textos verticalmente */
     justify-content: center; /* Centraliza os textos verticalmente */
     padding: 40px;
-    background-image: url('./image/dottles2.png'); /* Empilha pontos1 e pontos2 */
+    background-image: url('../image/dottles2.png'); /* Empilha pontos1 e pontos2 */
     background-repeat: no-repeat, no-repeat; /* Evita repetição */
     background-position: 95% 10%; /* Define posição para cada imagem */
     background-size: 23%; /* Define tamanhos diferentes para cada imagem */
-z-index: 3;  /* Coloca a seção de imagem acima da seção de texto */;
-margin-top: 0;
+    z-index: 3;  /* Coloca a seção de imagem acima da seção de texto */;
+    margin-top: 0;
 }
 
 .text-section h1 {
@@ -79,7 +78,7 @@ margin-top: 0;
     margin-left: 8%; /* Adiciona margem à esquerda */
     line-height: 1.6; /* Espaçamento entre linhas */
     font-family: "Montserrat", sans-serif; /* Fonte Montserrat */
-    font-weight: 500;
+    font-weight: 500; /*vinicius.scherer - Msm prop usada linha 77*/
 }
 
 .text-section p {
@@ -97,7 +96,7 @@ margin-top: 0;
     display: flex; /* Torna flexível */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    background-image: url('./image/dottles.png'); /* Empilha pontos1 e pontos2 */
+    background-image: url('../image/dottles.png'); /* Empilha pontos1 e pontos2 */
     background-repeat: no-repeat, no-repeat; /* Evita repetição */
     background-position: 20.5% 70%; /* Define posição para cada imagem */
     background-size: 50%; /* Define tamanhos diferentes para cada imagem */
@@ -114,7 +113,7 @@ margin-top: 0;
     top: 20%;
     transition: transform 2s ease-in-out; /* Atualizado para simular 60 FPS */
     transform: scale(1); /* Tamanho inicial */
-    box-shadow: -5px 5px 0px white; /* Ajuste os valores de deslocamento */
+    box-shadow: -5px 5px 0 white; /* Ajuste os valores de deslocamento */
 z-index: 3; /* Coloca a imagem acima da seção de texto */
 }
 
