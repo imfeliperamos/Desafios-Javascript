@@ -38,12 +38,14 @@ body::-webkit-scrollbar {
     background-color: #4831D4;  /* Cor azul */
     flex: 7.6; /* Ocupa 6/10 da largura */
     margin-top: -7.6%;
+    z-index: 1;
 }
 
 .green {
     background-color: #C0E579; /* Cor verde */;
     flex: 4; /* Ocupa 4/10 da largura */;
     margin-top: -7.6%;
+    z-index: 1;
 }
 
 .text-section {
@@ -58,11 +60,11 @@ body::-webkit-scrollbar {
     background-position: 95% 10%; /* Define posição para cada imagem */
     background-size: 23%; /* Define tamanhos diferentes para cada imagem */
     z-index: 3;  /* Coloca a seção de imagem acima da seção de texto */;
-    margin-top: 0;
+    z-index: 1;
 }
 
 .text-section h1 {
-    font-size: 54px;
+    font-size: 68px;
     margin-bottom: 0px;
     color: #C0E579; /* Cor verde claro */
     font-family: 'SF UI Text', sans-serif; 
@@ -72,8 +74,7 @@ body::-webkit-scrollbar {
 }
 
 .text-section h2 {
-    font-size: 18px;
-    font-weight: normal; /* Remove negrito */
+    font-size: 20px;
     margin-left: 8%; /* Adiciona margem à esquerda */
     line-height: 1.6; /* Espaçamento entre linhas */
     font-family: 'SF UI Text', sans-serif;
@@ -81,17 +82,17 @@ body::-webkit-scrollbar {
 }
 
 .text-section p {
-    font-size: 13px;
-    margin-left: 10px;
-    font-family: "Montserrat", sans-serif; /* Fonte Montserrat */
-    font-weight: 500;
+    font-size: 14px;
+    margin-left: 24px;
+    font-family: 'SF UI Text', sans-serif;
+    font-weight: 400;
     padding: 5%; /* Espaçamento interno */
+    line-height: 1.3;
     
 }
 
 .image-section {
     flex: 1; /* Define a proporção da seção verde */
-
     display: flex; /* Torna flexível */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
@@ -99,7 +100,7 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat, no-repeat; /* Evita repetição */
     background-position: 20.5% 70%; /* Define posição para cada imagem */
     background-size: 50%; /* Define tamanhos diferentes para cada imagem */
-    z-index: 3;  /* Coloca a seção de imagem acima da seção de texto */;
+    z-index: 1;  /* Coloca a seção de imagem acima da seção de texto */;
 }
 
 
@@ -122,7 +123,7 @@ z-index: 3; /* Coloca a imagem acima da seção de texto */
 
 .columns-container {
     display: flex; /* Cria layout horizontal com as colunas lado a lado */
-    padding: 20px; /* Espaçamento interno */
+    padding: 46px; /* Espaçamento interno */
     z-index: 1; /* Coloca a seção de colunas acima da imagem */
     position: relative; /* Necessário para o posicionamento absoluto da imagem */
     display: flex;
@@ -130,13 +131,17 @@ z-index: 3; /* Coloca a imagem acima da seção de texto */
 
 .column {
     color: #C0E579; /* Cor do texto */
-    flex: 0.5;
+    max-width: 40%; /* Limita o comprimento das linhas */
+    line-height: 1; /* Ajusta o espaçamento entre linhas */
+    display: flex;
 }
 
 .column-one {
     color: #C0E579; /* Cor do texto */
-    flex: 0.5
- 
+    max-width: 100%; /* Limita o comprimento das linhas */
+    line-height: 1; /* Ajusta o espaçamento entre linhas */
+    white-space: normal;
+    display: flex;
 }
 
 @media (max-width: 768px) {

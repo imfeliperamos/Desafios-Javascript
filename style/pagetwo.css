@@ -48,4 +48,13 @@
     max-width: 80%; /* Limita o tamanho máximo */
     margin-bottom: 0; /* Remove espaçamento extra */
     margin-top: -100%; /* Margem negativa para subir a imagem */
+
+}
+
+.engineering-imageone {
+
+    display: block; /* Faz com que a imagem seja um bloco independente */
+    margin: 20px auto 0; /* Espaço acima, centraliza horizontalmente, e ajusta a margem inferior */
+    width: 100%; /* Ajusta a largura total dentro da área */
+    max-width: 350px; /* Limita o tamanho máximo para não ficar exagerada */
 }

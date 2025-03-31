@@ -1,0 +1,139 @@
+
+/* Botão de abrir menu */
+.menu-toggle {
+  position: fixed;
+  top: 70px;
+  right: 90px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: rgb(69, 49, 182);
+  z-index: 2;
+  text-align: right
+}
+
+#menu.open {
+  transform: translate(-50%) scale(1); /* Cresce para tamanho normal */
+  opacity: 1;
+}
+
+/* Menu lateral */
+#menu {
+  position: fixed;
+  right: -60px; /* Define um espaço da borda lateral */
+margin-top: 70px;
+  transform: translateY(-50%) scale(0); /* Começa pequeno e invisível */
+  background: rgb(255, 255, 255);
+  width: 250px;
+  height: 350px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  opacity: 0;
+  transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+  z-index: 2;
+  
+}
+
+/* Botão de fechar */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #3D2C8D;
+  font-family: 'SF UI Text', sans-serif;
+  font-weight: 300;
+}
+
+/* Lista de links */
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+#menu ul li {
+  margin: 20px 0;
+  
+}
+
+#menu ul li a {
+  color: #3D2C8D;
+  font-size: 18px;
+  text-decoration: none;
+  
+  
+}
+
+/* Estilos para a seção de contato */
+.contact {
+  margin-top: 30px;
+}
+
+.contact p {
+  color: rgb(204, 204, 204);
+  font-size: 12px;
+}
+
+.contact a {
+  display: block;
+  color: #3D2C8D;
+  margin-top: 5px;
+}
+
+/* Redes sociais */
+.social {
+  font-size: 20px;
+margin-top: 30px;
+text-decoration: none;
+}
+
+/* Container dos ícones */
+.social {
+  display: flex;
+  gap: 15px; /* Espaço entre os ícones */
+  justify-content: center;
+}
+
+.social a {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animações suaves */
+  transform: scale(1); /* Tamanho inicial */
+}
+
+.social svg {
+  width: 40px; /* Tamanho do ícone (ajustável) */
+  height: 40px; /* Tamanho do ícone (ajustável) */
+  fill: #3D2C8D; /* Cor padrão dos ícones */
+}
+
+.social a:hover {
+  transform: scale(1.2); /* Expande o tamanho ao passar o mouse */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0); /* Adiciona uma sombra no hover */
+}
+
+.social a:hover svg {
+  fill: #C0E579; /* Cor diferente no hover */
+}
+
+/* Menu aberto */
+#menu.active {
+  right: 0;
+}
+
+.contato {
+  text-decoration: none;
+  color: rgb(52, 52, 52);
+}
+
+.divider {
+    border-bottom: 1px solid #ccc; /* Cor e estilo da linha */
+    margin: 10px 0; /* Espaçamento acima e abaixo */
+    width: 100%; /* Largura total */
+}
