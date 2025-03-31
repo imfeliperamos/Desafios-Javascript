@@ -1,0 +1,54 @@
+/* Estilos gerais */
+.footer {
+    background-color: #F9F9F9; /* Cor de fundo elegante */
+    padding: 20px; /* Espaçamento interno */
+    color: #4831D4; /* Cor do texto */
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 100px;
+    position: relative;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.023);
+  }
+  
+  .footer-container {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+  
+  .footer-text {
+    margin-bottom: 10px; /* Espaçamento abaixo do texto */
+    font-size: 14px; /* Tamanho do texto */
+  }
+  
+  .footer-links {
+    margin-bottom: 15px; /* Espaçamento abaixo dos links */
+  }
+  
+  .footer-link {
+    color: #4831D4; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    margin: 0 10px; /* Espaço entre os links */
+    transition: color 0.3s ease; /* Animação suave */
+  }
+  
+  .footer-link:hover {
+    color: #261788; /* Cor no hover */
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center; /* Alinha ícones no centro */
+    gap: 15px; /* Espaço entre os ícones */
+  }
+  
+  .social-icon svg {
+    width: 30px; /* Tamanho dos ícones */
+    height: 30px; /* Tamanho dos ícones */
+    fill: #C0E579; /* Cor dos ícones */
+    transition: transform 0.3s ease, fill 0.3s ease; /* Animação suave */
+  }
+  
+  .social-icon:hover svg {
+    fill: #fff; /* Cor no hover */
+    transform: scale(1.2); /* Efeito de pop-up ao passar o mouse */
+  }
+  

@@ -2,8 +2,8 @@
 /* Botão de abrir menu */
 .menu-toggle {
   position: fixed;
-  top: 70px;
-  right: 90px;
+  top: 100px;
+  right: 110px;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
@@ -23,13 +23,13 @@
 #menu {
   position: fixed;
   right: -60px; /* Define um espaço da borda lateral */
-margin-top: 70px;
+margin-top: 80px;
   transform: translateY(-50%) scale(0); /* Começa pequeno e invisível */
   background: rgb(255, 255, 255);
   width: 250px;
-  height: 350px;
+  height: 400px;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 3px;
   text-align: left;
   opacity: 0;
   transition: transform 0.4s ease-out, opacity 0.3s ease-out;
@@ -46,7 +46,8 @@ margin-top: 70px;
   position: absolute;
   top: 15px;
   right: 15px;
-  color: #3D2C8D;
+  margin: 20px;
+  color: #4831D4;
   font-family: 'SF UI Text', sans-serif;
   font-weight: 300;
 }
@@ -60,15 +61,39 @@ margin-top: 70px;
 
 #menu ul li {
   margin: 20px 0;
+
   
 }
 
 #menu ul li a {
-  color: #3D2C8D;
-  font-size: 18px;
-  text-decoration: none;
-  
-  
+  color: #4831D4;
+  font-size: 19px;
+  text-decoration: none; /* Remove o sublinhado padrão */
+  position: relative; /* Necessário para o ::after funcionar */
+  transition: color 0.3s ease; /* Suaviza a mudança de cor */
+  font-family: 'SF UI Text', sans-serif;
+  font-weight: 400;
+}
+
+#menu ul li a::after {
+  content: ""; /* Pseudo-elemento vazio */
+  position: absolute;
+  left: 0; /* Início da linha */
+  bottom: -2px; /* Distância abaixo do texto */
+  width: 50%; /* Meia linha */
+  height: 2px; /* Altura da linha */
+  background-color: #bfe5794a; /* Cor da linha */
+  transform: scaleX(0); /* Linha invisível inicialmente */
+  transform-origin: left; /* Animação começa da esquerda */
+  transition: transform 0.3s ease-in-out; /* Animação suave */
+}
+
+#menu ul li a:hover {
+  color: #C0E579; /* Altera a cor ao passar o mouse */
+}
+
+#menu ul li a:hover::after {
+  transform: scaleX(1); /* Mostra a meia linha no hover */
 }
 
 /* Estilos para a seção de contato */
@@ -97,8 +122,10 @@ text-decoration: none;
 /* Container dos ícones */
 .social {
   display: flex;
-  gap: 15px; /* Espaço entre os ícones */
-  justify-content: center;
+  gap: 20px; /* Espaço entre os ícones */
+  justify-content: left;
+  margin-top: 80px;
+  
 }
 
 .social a {
@@ -110,7 +137,7 @@ text-decoration: none;
 .social svg {
   width: 40px; /* Tamanho do ícone (ajustável) */
   height: 40px; /* Tamanho do ícone (ajustável) */
-  fill: #3D2C8D; /* Cor padrão dos ícones */
+  fill: #4831D4; /* Cor padrão dos ícones */
 }
 
 .social a:hover {

@@ -153,10 +153,3 @@ z-index: 3; /* Coloca a imagem acima da seção de texto */
         width: 100%; /* Colunas ocupam toda a largura */
     }
 }
-
-.footer {
-    height: 100px; /* Define a altura do rodapé */
-    background-color: #F9F9F9; /* Cor branca */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-
-}
