@@ -1,0 +1,20 @@
+🔁 2. O que é o for...of
+O for...of é uma estrutura moderna de repetição usada para percorrer 
+elementos de arrays (ou listas) de forma mais legível e limpa do que o for tradicional.
+
+for...of é usado para percorrer valores dentro de arrays.
+Ele acessa diretamente o elemento do array, sem precisar de índice.
+
+Sintaxe:
+for (let variavel of array) {
+    // bloco de código
+}
+
+Quando usamos for...of com objetos dentro de arrays,
+a variável do laço representa o objeto inteiro da vez.
+
+🧠 Para anotar no caderno (resumo teórico):
+🔹 for...of — Para que serve?
+É usado para percorrer arrays de forma simples e direta.
+
+Ideal quando você precisa acessar diretamente os valores (não os índices).
